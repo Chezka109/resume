@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Chezka Quinola
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{minipage}[t]{0.08\textwidth}
+\vspace{0pt}
+\includegraphics[width=0.65in]{qrcode.png}
+\end{minipage}
+\begin{minipage}[t]{0.92\textwidth}
+\vspace{0pt}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Chezka Therese Quinola} & \href{mailto:quinola01@allegheny.edu}{quinola01@allegheny.edu}\\
+  Meadville, PA & \href{tel:+18147372869}{814-737-2869} \\
+\end{tabular*}
+\end{minipage}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Allegheny College}{Meadville, PA}
+      {Bachelor of Science in Software Engineering and Industrial Design (Double Major); GPA: 3.76/4.00}{Expected May 2027}
+    \resumeSubheading
+      {American Academy Casablanca}{Bouskoura, Morocco}
+      {International Baccalaureate Diploma (AP domestic conversion)}{June 2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\textbf{Programming Languages}: Python, JavaScript, SQL, HTML5, CSS, Swift}
+    \resumeSubItem{\textbf{Databases \& Tools}: MongoDB, Neo4j, Docker, Quarto, Visual Studio Code, Xcode, Microsoft Office, Google Workspace}
+    \resumeSubItem{\textbf{Languages}: English, Filipino, French}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {United States Steel}{Remote}
+      {IT Intern}{March 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Support enterprise IT systems by assisting with data analysis, service management metrics validation, and development of custom applications, reports, and interfaces to improve business and plant operations}
+        \resumeItem{Perform data collection, cleaning, and exploratory analysis on large datasets while supporting cybersecurity initiatives and resolving internal customer technical issues}
+        \resumeItem{Troubleshoot hardware and software systems to ensure optimal performance and minimize downtime}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Allegheny College}{Meadville, PA}
+      {Computer Science Technical Leader}{September 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Mentor and guide students through coding challenges and project development, providing insights on best practices in software development, debugging, and code optimization}
+        \resumeItem{Lead technical workshops and collaborative sessions, introducing new tools and frameworks to enhance the team's skill set}
+        \resumeItem{Ensure efficient project execution through code reviews and pair programming sessions}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Allegheny College - ITS Department}{Meadville, PA}
+      {IT Intern}{May 2024 -- August 2025}
+      \resumeItemListStart
+        \resumeItem{Provided first-line technical support to employees and customers, resolving issues related to hardware, software, and network connectivity}
+        \resumeItem{Assisted with setup, configuration, and troubleshooting of desktop computers, laptops, printers, and mobile devices}
+        \resumeItem{Documented technical procedures and maintained knowledge base for common issues}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Allegheny College / Acutec Precision Aerospace Inc.}{Meadville, PA}
+      {Supply Chain Intern}{September 2024 -- January 2025}
+      \resumeItemListStart
+        \resumeItem{Collaborated with local aerospace company Acutec on a visual database project, applying database management and software engineering skills to optimize data visualization and retrieval}
+        \resumeItem{Contributed to Allegheny College Baseball's data collection and analysis project, supporting real-time decision-making and performance evaluation}
+        \resumeItem{Developed database queries and reports to identify trends and improve supply chain efficiency}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH PROJECTS-----------------
+\section{Research Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\textbf{Adaptive Pool Triangle for Inclusive Cue Sports} (May -- Aug 2025): Designed adaptive equipment enabling autonomous play for users with physical disabilities through iterative prototyping and inclusive design principles}
+    \resumeSubItem{\textbf{Neo4j Supply Chain Defect Analysis} (Aug 2024 -- Feb 2025): Modeled component relationships using graph databases for visualization and root-cause analysis; deployed in containerized Docker environments}
+    \resumeSubItem{\textbf{Interactive Coding Education Platform} (Jul -- Aug 2024): Built Quarto-based website with coding modules using HTML/CSS and responsive frameworks; applied accessibility standards}
+    \resumeSubItem{\textbf{Discord Bot for Student Engagement} (Jun -- Jul 2024): Developed bot to automate workflows and improve communication; integrated role-based functionality and external APIs}
+  \resumeSubHeadingListEnd
+
+
+%-----------LEADERSHIP-----------------
+\section{Leadership \& Service}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Allegheny Student Government (ASG)}{Allegheny College}
+      {President}{April 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Represent student body and lead ASG executive board in planning policy, events, and student-focused initiatives}
+        \resumeItem{Champion accessibility for students with physical, mental, and athletic needs; advocate for expanded digital access}
+      \resumeItemListEnd
+    \resumeSubSubheading
+      {Attorney General}{August 2024 -- April 2025}
+      \resumeItemListStart
+        \resumeItem{Enforced and interpreted student government constitution and bylaws, ensuring compliance across all branches}
+        \resumeItem{Served as primary advisor on parliamentary procedure, resolving disputes and clarifying governance policies}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Code With Chompers}{Allegheny College}
+      {Outreach Fellow}{January 2025 -- December 2025}
+      \resumeItemListStart
+        \resumeItem{Taught foundational coding and computational thinking to K-12 students using Blue-Bot programmable robots}
+        \resumeItem{Designed and facilitated interactive lessons and challenges introducing sequencing, logic, and problem solving}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------HONORS & ACTIVITIES-----------------
+\section{Honors \& Activities}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\textbf{President}, Upsilon Pi Epsilon (UPE) Honor Society (Jun 2025 -- Present): Lead operations and initiatives for computing honor society; organize workshops and mentorship programs}
+    \resumeSubItem{\textbf{Membership Chair}, ACM Allegheny College Chapter (Dec 2024 -- Present): Manage membership growth through outreach and technical events}
+    \resumeSubItem{\textbf{Member}, Lambda Sigma Honor Society (Jan 2025 -- Present): Collaborate on service projects promoting academic excellence}
+    \resumeSubItem{\textbf{Conference Speaker}, Ohio Celebration of Women in Computing (Feb 2025): Presented Neo4j and Docker solution for supply chain defect detection}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

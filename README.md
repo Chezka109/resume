@@ -1,26 +1,38 @@
-A single-page, one-column resume for software developers. It uses the base latex templates and fonts to provide ease of use and installation when trying to update the resume. The different sections are clearly documented and custom commands are used to provide consistent formatting. The three main sections in the resume are education, experience, and projects.
+# Chezka Quinola's Resume
 
-### Motivation
+My personal resume built using LaTeX. This template is forked from [Sourabh Bajaj's resume template](https://github.com/sb2nov/resume) with additional enhancements including QR code generation.
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
+## Features
 
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
+- Clean, ATS-friendly single/two-page format
+- Embedded QR code linking to the resume PDF
+- Python-based QR code generator
+- Custom sections optimized for software engineering roles
 
-### Quick start
+## Building the Resume
 
-Get started quickly using [Overleaf](https://www.overleaf.com/latex/templates/software-engineer-resume/gqxmqsvsbdjf) template.
+### Using TinyTeX (macOS)
 
-### Build using Docker
+```sh
+export PATH="$HOME/Library/TinyTeX/bin/universal-darwin:$PATH"
+pdflatex -interaction=nonstopmode chezka_quinola_resume.tex
+```
+
+### Using Docker
 
 ```sh
 docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+docker run --rm -i -v "$PWD":/data latex pdflatex chezka_quinola_resume.tex
 ```
 
-### Preview
+### Generating QR Code
 
-![Resume Screenshot](/resume_preview.png)
+The QR code is generated using Python:
 
-### License
+```sh
+python3 -c "import qrcode; qr = qrcode.QRCode(version=1, box_size=8, border=1); qr.add_data('YOUR_URL_HERE'); qr.make(fit=True); img = qr.make_image(fill_color='black', back_color='white'); img.save('qrcode.png')"
+```
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+## Credits
+
+This resume is based on [Sourabh Bajaj's LaTeX resume template](https://github.com/sb2nov/resume) (MIT License).
